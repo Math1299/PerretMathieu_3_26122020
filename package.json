@@ -1,0 +1,21 @@
+{
+  "name": "perretmathieu_3_26122020-1",
+  "version": "1.0.0",
+  "description": "Ohmyfood OC-P3-",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Math1299/PerretMathieu_3_26122020.git"
+  },
+  "author": "Mathieu Perret",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Math1299/PerretMathieu_3_26122020/issues"
+  },
+  "homepage": "https://github.com/Math1299/PerretMathieu_3_26122020#readme"
+}
