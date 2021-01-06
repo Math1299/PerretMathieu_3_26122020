@@ -13,11 +13,65 @@
     ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Accueil - Ohmyfood !</title>
   </head>
-  <body></body>
+  <body>
+    <div class="loading">
+      <div class="loading--spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <header>
+      <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" />
+    </header>
+    <div class="reservation">
+      <div class="reservation--search">
+        <h3><i class="fas fa-map-marker-alt"></i> Paris, Belleville</h3>
+      </div>
+      <div class="reservation--text">
+        <h2>
+          Réservez le menu qui<br />
+          vous convient
+        </h2>
+        <p>
+          Découvrez des restaurants d'exception,<br />sélectionnés par nos
+          soins.
+        </p>
+        <a href="#restaurants">
+          <button class="btn--explore">Explorer nos restaurants</button>
+        </a>
+      </div>
+    </div>
+    <div class="fct">
+      <h2>Fonctionnement</h2>
+      <div class="btn--fct">
+        <div class="btn--fct__1">
+          <button>
+            <i class="fas fa-mobile-alt"></i>
+            Choisissez un restaurant
+          </button>
+        </div>
+        <div class="btn--fct__2">
+          <button>
+            <i class="fas fa-list-ul"></i>
+            Composez votre menu
+          </button>
+        </div>
+        <div class="btn3--fct__3">
+          <button>
+            <i class="fas fa-store"></i>
+            Dégustez au restaurant
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="restaurants"></div>
+    <footer></footer>
+  </body>
 </html>
