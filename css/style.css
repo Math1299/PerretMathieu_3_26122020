@@ -51,6 +51,7 @@ header {
   height: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 img.logo {
@@ -115,9 +116,53 @@ i.fas.fa-map-marker-alt {
 }
 .fct .btn--fct {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.fct .btn--fct__1, .fct .btn--fct__2, .fct .btn--fct__3 {
+  position: relative;
+  width: 30rem;
+  height: 6rem;
+  background: #f3f3f3;
+  padding: 1rem 5rem 1rem 1rem;
+  margin: 0 auto 2.5rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px -1px rgba(128, 130, 134, 0.48);
+}
+.fct .btn--fct__1:hover, .fct .btn--fct__2:hover, .fct .btn--fct__3:hover {
+  background-color: #f5edff;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px -1px rgba(128, 130, 134, 0.64);
+}
+.fct .btn--fct__1:hover i, .fct .btn--fct__2:hover i, .fct .btn--fct__3:hover i {
+  color: #9356dc;
+}
+.fct .btn--fct__1 i, .fct .btn--fct__2 i, .fct .btn--fct__3 i {
+  color: grey;
+  font-size: 1.5rem;
+}
+.fct .btn--fct__1 p, .fct .btn--fct__2 p, .fct .btn--fct__3 p {
+  text-align: center;
+  position: absolute;
+  font-weight: 500;
+  left: -1rem;
+  top: 2.1rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  padding-top: 0.3rem;
+  color: white;
+  border-radius: 50%;
+  background-color: #9356dc;
+}
+.fct .btn--fct__1 span, .fct .btn--fct__2 span, .fct .btn--fct__3 span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
