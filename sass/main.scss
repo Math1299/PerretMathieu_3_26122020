@@ -37,6 +37,11 @@ h3 {
 }
 p {
   font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+span {
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -50,7 +55,8 @@ button {
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
-$footerbg-color: #131416;
+$nouveau-color: #109473;
+$footerbg-color: #353535;
 $cardbg-color: #eaeaea;
 $bg-color: rgb(243, 243, 243);
 $box-shadow: 2px 2px 5px -1px rgba(128, 130, 134, 0.48);
@@ -139,7 +145,7 @@ i.fas.fa-map-marker-alt {
     background-color: $bg-color;
     padding: 3rem 0 5rem 0;
     h2,
-    p {
+    span {
       text-align: center;
       margin-bottom: 2rem;
     }
@@ -153,7 +159,7 @@ i.fas.fa-map-marker-alt {
       box-shadow: $btn-box-shadow;
       &:hover {
         cursor: pointer;
-        opacity: 0.95;
+        opacity: 0.9;
         box-shadow: $btn-box-shadow__hover;
       }
     }
@@ -189,7 +195,6 @@ i.fas.fa-map-marker-alt {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
   justify-content: space-between;
   a {
     width: 100%;
@@ -204,20 +209,31 @@ i.fas.fa-map-marker-alt {
 .restcard1 {
   width: 100%;
   height: 100%;
+  position: relative;
+  .nouveau {
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    color: $nouveau-color;
+    background-color: $tertiary-color;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+  }
   img {
     width: 100%;
     height: 75%;
     border-radius: 2rem 2rem 0 0;
     object-fit: cover;
   }
+  &--legend {
+    width: 100%;
+    height: 25%;
+    line-height: 2rem;
+    position: relative;
+    padding-left: 1rem;
+  }
 }
-.restcard1--legend {
-  width: 100%;
-  height: 25%;
-  line-height: 2rem;
-  position: relative;
-  padding-left: 1rem;
-}
+
 .fas.fa-heart {
   position: absolute;
   left: 90%;
@@ -236,4 +252,33 @@ i.fas.fa-map-marker-alt {
   position: absolute;
   left: 90%;
   bottom: 50%;
+}
+footer {
+  width: 100%;
+  height: auto;
+  background-color: $footerbg-color;
+  padding: 0 2rem 2rem;
+}
+.footer--content {
+  color: #eaeaea;
+  img.logo {
+    padding: 0;
+    width: 13rem;
+    filter: invert(100%);
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    padding-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+  }
+  a {
+    color: #eaeaea;
+    text-decoration: none;
+  }
+  i {
+    width: 3rem;
+  }
 }
