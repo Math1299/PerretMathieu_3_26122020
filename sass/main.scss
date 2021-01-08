@@ -177,6 +177,13 @@ header {
   width: 100%;
   height: auto;
   @include flexMid;
+  position: relative;
+  a {
+    color: black;
+    position: absolute;
+    right: 85%;
+    top: 2.2rem;
+  }
 }
 img.logo {
   width: 50%;

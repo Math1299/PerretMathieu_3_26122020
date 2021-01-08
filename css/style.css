@@ -122,6 +122,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+header a {
+  color: black;
+  position: absolute;
+  right: 85%;
+  top: 2.2rem;
 }
 
 img.logo {
