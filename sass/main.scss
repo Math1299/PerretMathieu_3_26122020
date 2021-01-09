@@ -35,6 +35,12 @@ h3 {
   font-size: 1.3rem;
   font-weight: 500;
 }
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
@@ -55,7 +61,7 @@ button {
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
-$nouveau-color: #109473;
+$nouveau-color: darken($tertiary-color, 45%);
 $footerbg-color: #353535;
 $cardbg-color: #eaeaea;
 $bg-color: rgb(243, 243, 243);
@@ -181,7 +187,7 @@ header {
   a {
     color: black;
     position: absolute;
-    right: 85%;
+    right: 90%;
     top: 2.2rem;
   }
 }
@@ -349,5 +355,39 @@ footer {
   }
   i {
     width: 3rem;
+  }
+}
+//Pages des menus
+.container--menu {
+  width: 100%;
+  height: auto;
+}
+.img--rest__top {
+  width: 100%;
+  height: 24rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.menu {
+  width: 100%;
+  height: auto;
+  background: $bg-color;
+  border-radius: 3rem 3rem 0 0;
+  padding: 2rem 1rem;
+  position: relative;
+  top: -2.5rem;
+  &--title {
+    h1 {
+      font-size: 2.8rem;
+    }
+    i {
+      position: relative;
+      top: 22%;
+    }
+  }
+  &--entrees {
   }
 }
