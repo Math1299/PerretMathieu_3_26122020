@@ -36,6 +36,8 @@ h3 {
   font-weight: 500;
 }
 h4 {
+  position: relative;
+  margin: 2rem 0 1rem 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
@@ -43,6 +45,7 @@ h4 {
   width: 100%;
   justify-content: flex-start;
 }
+
 h5 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -76,6 +79,14 @@ $box-shadow__hover: 2px 2px 5px -1px rgba(128, 130, 134, 0.64);
 $btn-box-shadow: 2px 2px 5px -1px rgba(19, 20, 22, 0.48);
 $btn-box-shadow__hover: 3px 3px 5px -1px rgba(19, 20, 22, 0.64);
 
+h4::after {
+  content: "";
+  position: absolute;
+  border: 1px solid $tertiary-color;
+  width: 3rem;
+  bottom: -0.5rem;
+  left: 0.1rem;
+}
 //mixins
 @mixin flexMid {
   display: flex;
@@ -123,6 +134,20 @@ $btn-box-shadow__hover: 3px 3px 5px -1px rgba(19, 20, 22, 0.64);
     font-size: 1.5rem;
     font-weight: 500;
     padding-left: 3rem;
+  }
+}
+@mixin btn--action {
+  background: #ff79da;
+  border: none;
+  background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+  padding: 1.2rem 2.2rem;
+  color: white;
+  border-radius: 20px;
+  box-shadow: $btn-box-shadow;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: $btn-box-shadow__hover;
   }
 }
 // loading spinner
@@ -190,7 +215,7 @@ $btn-box-shadow__hover: 3px 3px 5px -1px rgba(19, 20, 22, 0.64);
     width: 100%;
   }
   100% {
-    width: 80%;
+    width: 75%;
   }
 }
 //header
@@ -237,18 +262,7 @@ i.fas.fa-map-marker-alt {
       margin-bottom: 2rem;
     }
     .btn--explore {
-      background: #ff79da;
-      border: none;
-      background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
-      padding: 1.2rem 2.2rem;
-      color: white;
-      border-radius: 20px;
-      box-shadow: $btn-box-shadow;
-      &:hover {
-        cursor: pointer;
-        opacity: 0.9;
-        box-shadow: $btn-box-shadow__hover;
-      }
+      @include btn--action;
     }
   }
 }
@@ -376,6 +390,7 @@ footer {
 .container--menu {
   width: 100%;
   height: auto;
+  background: $bg-color;
 }
 .img--rest__top {
   width: 100%;
@@ -400,10 +415,12 @@ footer {
     }
     i {
       position: relative;
-      top: 22%;
+      top: 3.5%;
     }
   }
-  &--entrees {
+  &--entrees,
+  &__plats,
+  &__desserts {
     @include flexMid;
     width: 100%;
     height: auto;
@@ -418,12 +435,13 @@ footer {
   height: auto;
   padding: 1.5rem 2rem;
   border-radius: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   position: relative;
   overflow: hidden;
   &:hover {
     .animation {
-      transform: translateX(0rem);
+      transform: translateX(0);
       i {
         transform: rotate(0deg);
       }
@@ -434,12 +452,12 @@ footer {
     .menu--card__txt {
       h5,
       p {
-        animation: reduce 500ms ease-in-out;
+        animation: reduce 500ms ease-in-out forwards;
       }
     }
   }
   &__txt {
-    width: 90%;
+    width: 85%;
     h5,
     p {
       white-space: nowrap;
@@ -448,19 +466,20 @@ footer {
     }
   }
   &__prix {
-    width: 20%;
+    width: 15%;
+    background-color: white;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    transform: translateX(0px);
+    transform: translateX(0);
     transform-origin: right;
     transition: transform 500ms ease-in-out;
   }
   .animation {
     position: absolute;
     height: 6.3rem;
-    width: 6rem;
-    right: -8rem;
+    width: 7rem;
+    right: -9rem;
     top: -1.5rem;
     border-radius: 0 1.5rem 1.5rem 0;
     background-color: $tertiary-color;
@@ -475,5 +494,12 @@ footer {
       transform: rotate(-360deg);
       transition: transform 500ms ease-in-out;
     }
+  }
+}
+.order {
+  @include flexMid;
+  margin: 5rem 0 0;
+  .btn--order {
+    @include btn--action;
   }
 }
