@@ -410,7 +410,7 @@ footer {
 }
 .menu--header i {
   position: relative;
-  top: 3.5%;
+  top: 3%;
 }
 .menu--entrees, .menu__plats, .menu__desserts {
   display: flex;
