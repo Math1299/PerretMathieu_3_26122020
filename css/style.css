@@ -239,7 +239,6 @@ i.fas.fa-map-marker-alt {
   width: 80%;
   height: 6.5rem;
   background: #f3f3f3;
-  padding: -1rem 5rem 1rem 1rem;
   margin: 0 auto 2.5rem;
   border-radius: 2rem;
   display: flex;
@@ -367,7 +366,6 @@ i.fas.fa-map-marker-alt {
 .fas.fa-heart:hover {
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;
   background-image: linear-gradient(#9356dc, #ff79da);
   opacity: 1;
   transition: opacity 800ms;
