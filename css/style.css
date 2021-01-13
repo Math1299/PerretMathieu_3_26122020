@@ -230,6 +230,7 @@ i.fas.fa-map-marker-alt {
   color: white;
   border-radius: 20px;
   box-shadow: 2px 2px 5px -1px rgba(19, 20, 22, 0.48);
+  outline-style: none;
 }
 .reservation--text .btn--explore:hover {
   cursor: pointer;
@@ -384,24 +385,36 @@ i.fas.fa-map-marker-alt {
   padding-left: 1rem;
 }
 
-.fas.fa-heart {
-  position: absolute;
-  left: 90%;
-  bottom: 50%;
-  opacity: 0;
-}
-.fas.fa-heart:hover {
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(#9356dc, #ff79da);
-  opacity: 1;
-  transition: opacity 800ms;
-}
-
 .far.fa-heart {
   position: absolute;
   left: 90%;
   bottom: 50%;
+}
+
+.heart-gradient {
+  position: absolute;
+  width: 2.5rem;
+  height: 2rem;
+  left: 89.75%;
+  top: 3%;
+  opacity: 0;
+}
+.heart-gradient:hover {
+  opacity: 1;
+  transition: opacity 800ms;
+}
+
+img.heart-gradient__index {
+  position: absolute;
+  width: 2.4rem;
+  height: 2rem;
+  left: 89.5%;
+  top: 14%;
+  opacity: 0;
+}
+img.heart-gradient__index:hover {
+  opacity: 1;
+  transition: opacity 800ms;
 }
 
 footer {
@@ -594,6 +607,7 @@ footer {
   color: white;
   border-radius: 20px;
   box-shadow: 2px 2px 5px -1px rgba(19, 20, 22, 0.48);
+  outline-style: none;
 }
 .order .btn--order:hover {
   cursor: pointer;

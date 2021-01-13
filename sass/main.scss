@@ -152,6 +152,7 @@ h4::after {
   color: white;
   border-radius: 20px;
   box-shadow: $btn-box-shadow;
+  outline-style: none;
   &:hover {
     cursor: pointer;
     opacity: 0.9;
@@ -373,26 +374,51 @@ i.fas.fa-map-marker-alt {
     padding-left: 1rem;
   }
 }
-
-.fas.fa-heart {
-  position: absolute;
-  left: 90%;
-  bottom: 50%;
-  opacity: 0;
-  &:hover {
-    color: transparent;
-    background-clip: text;
-    // -webkit-background-clip: text;
-    background-image: linear-gradient(#9356dc, #ff79da);
-    opacity: 1;
-    transition: opacity 800ms;
-  }
-}
 .far.fa-heart {
   position: absolute;
   left: 90%;
   bottom: 50%;
 }
+
+.heart-gradient {
+  position: absolute;
+  width: 2.5rem;
+  height: 2rem;
+  left: 89.75%;
+  top: 3%;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+    transition: opacity 800ms;
+  }
+}
+img.heart-gradient__index {
+  position: absolute;
+  width: 2.4rem;
+  height: 2rem;
+  left: 89.5%;
+  top: 14%;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+    transition: opacity 800ms;
+  }
+}
+// .fas.fa-heart {
+//   position: absolute;
+//   left: 90%;
+//   bottom: 50%;
+//   opacity: 0;
+//   &:hover {
+//     color: #ff79da;
+//     // background-clip: text;
+//     // -webkit-background-clip: text;
+//     // background: linear-gradient(#9356dc, #ff79da);
+//     opacity: 1;
+//     transition: opacity 800ms;
+//   }
+// }
+
 //footer
 footer {
   width: 100%;
