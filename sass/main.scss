@@ -225,9 +225,21 @@ h4::after {
   }
 
   100% {
-    width: 75%;
+    width: 70%;
   }
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 //header
 header {
   width: 100%;
@@ -271,11 +283,12 @@ i.fas.fa-map-marker-alt {
     }
     h2,
     span {
-      width: 25.5rem;
+      width: 25.6rem;
       text-align: center;
       margin-bottom: 2rem;
       @media screen and (min-width: 950px) {
         width: 90%;
+        padding-left: 0;
       }
     }
     .btn--explore {
@@ -523,6 +536,22 @@ footer {
   }
 }
 .menu--card {
+  &:nth-child(1) {
+    animation: fadeInUp 1s 0.2s ease-in-out both;
+  }
+  &:nth-child(2) {
+    animation: fadeInUp 1s 0.4s ease-in-out both;
+  }
+  &:nth-child(3) {
+    animation: fadeInUp 1s 0.6s ease-in-out both;
+  }
+  &:nth-child(4) {
+    animation: fadeInUp 1s 0.8s ease-in-out both;
+  }
+  &:nth-child(5) {
+    animation: fadeInUp 1s 1s ease-in-out both;
+  }
+  cursor: pointer;
   background-color: #fff;
   width: 100%;
   height: auto;
@@ -545,12 +574,15 @@ footer {
     .menu--card__txt {
       h5,
       p {
-        animation: reduce 500ms ease-in-out both;
+        animation: reduce 500ms ease-out both;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
   &__txt {
-    width: 85%;
+    width: 80%;
     h5,
     p {
       white-space: nowrap;
@@ -559,7 +591,7 @@ footer {
     }
   }
   &__prix {
-    width: 15%;
+    width: 20%;
     background-color: #fff;
     display: flex;
     justify-content: flex-end;
@@ -595,5 +627,6 @@ footer {
   margin: 5rem 0 0;
   .btn--order {
     @include btn--action;
+    padding: 1.2rem 3rem;
   }
 }
