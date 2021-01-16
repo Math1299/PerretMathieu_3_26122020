@@ -9,7 +9,7 @@
 html {
   font-size: 62.5%;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
   html {
     font-size: 80%;
   }
@@ -246,7 +246,7 @@ i.fas.fa-map-marker-alt {
 .reservation--text .btn--explore:hover {
   cursor: pointer;
   opacity: 0.9;
-  box-shadow: 3px 3px 5px -1px rgba(19, 20, 22, 0.64);
+  box-shadow: 3px 3px 8px -1px rgba(19, 20, 22, 0.64);
 }
 
 .fct {
@@ -294,7 +294,7 @@ i.fas.fa-map-marker-alt {
 .fct .btn--fct__1:hover, .fct .btn--fct__2:hover, .fct .btn--fct__3:hover {
   background-color: #f5edff;
   cursor: pointer;
-  box-shadow: 2px 2px 5px -1px rgba(128, 130, 134, 0.64);
+  box-shadow: 2px 2px 10px -1px rgba(128, 130, 134, 0.64);
 }
 .fct .btn--fct__1:hover i, .fct .btn--fct__2:hover i, .fct .btn--fct__3:hover i {
   color: #9356dc;
@@ -643,7 +643,7 @@ footer {
 .order .btn--order:hover {
   cursor: pointer;
   opacity: 0.9;
-  box-shadow: 3px 3px 5px -1px rgba(19, 20, 22, 0.64);
+  box-shadow: 3px 3px 8px -1px rgba(19, 20, 22, 0.64);
 }
 
 /*# sourceMappingURL=style.css.map */
