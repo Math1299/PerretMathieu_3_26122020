@@ -1,0 +1,27 @@
+//fonctionnement
+.fct {
+  width: 100%;
+  min-width: 330px;
+  height: auto;
+  padding: 4.5rem 0;
+  @media screen and (min-width: 950px) {
+    padding: 1rem 0;
+  }
+
+  .btn--fct {
+    margin: 0 auto;
+    @include flexMid;
+    flex-direction: column;
+    @media screen and (min-width: 950px) {
+      flex-direction: row;
+      width: 90%;
+      justify-content: space-evenly;
+    }
+    &__1,
+    &__2,
+    &__3 {
+      position: relative;
+      @include btn--fct;
+    }
+  }
+}

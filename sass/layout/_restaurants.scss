@@ -1,0 +1,146 @@
+//restaurants
+.restaurants {
+  padding: 4.5rem 0;
+  background-color: $bg-color;
+  width: 100%;
+  height: auto;
+}
+.restcard {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 950px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  a {
+    width: 100%;
+    height: 23rem;
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 2rem 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 950px) {
+      width: 48%;
+      flex-wrap: wrap;
+    }
+  }
+}
+.restcard1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  @media screen and (min-width: 950px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nouveau {
+    position: absolute;
+    left: 75%;
+    top: 5%;
+    color: $nouveau-color;
+    background-color: $tertiary-color;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+  }
+  img {
+    width: 100%;
+    height: 75%;
+    border-radius: 2rem 2rem 0 0;
+    object-fit: cover;
+  }
+  &--legend {
+    width: 100%;
+    height: 25%;
+    line-height: 2rem;
+    position: relative;
+    padding-left: 1rem;
+  }
+}
+.far.fa-heart {
+  position: absolute;
+  left: 90%;
+  bottom: 50%;
+}
+
+.heart-gradient {
+  position: absolute;
+  width: 2.5rem;
+  height: 2rem;
+  left: 89.75%;
+  top: 3%;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+    transition: opacity 800ms;
+  }
+}
+img.heart-gradient__index {
+  position: absolute;
+  width: 2.4rem;
+  height: 2rem;
+  left: 89.5%;
+  top: 14%;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+    transition: opacity 800ms;
+  }
+}
+// .fas.fa-heart {
+//   position: absolute;
+//   left: 90%;
+//   bottom: 50%;
+//   opacity: 0;
+//   &:hover {
+//     color: #ff79da;
+//     // background-clip: text;
+//     // -webkit-background-clip: text;
+//     // background: linear-gradient(#9356dc, #ff79da);
+//     opacity: 1;
+//     transition: opacity 800ms;
+//   }
+// }
+
+//footer
+footer {
+  width: 100%;
+  height: auto;
+  background-color: $footerbg-color;
+  padding: 0 2rem 2rem;
+}
+.footer--content {
+  color: #eaeaea;
+  img.logo {
+    padding: 0;
+    width: 13rem;
+    filter: invert(100%);
+  }
+  ul {
+    list-style: none;
+    @media screen and (min-width: 950px) {
+      width: 90%;
+      display: inline-flex;
+      justify-content: space-evenly;
+    }
+  }
+  li {
+    padding-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  a {
+    color: #eaeaea;
+    text-decoration: none;
+  }
+  i {
+    width: 3rem;
+  }
+}

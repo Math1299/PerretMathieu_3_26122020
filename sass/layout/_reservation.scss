@@ -1,0 +1,38 @@
+//reservation
+i.fas.fa-map-marker-alt {
+  padding-right: 1rem;
+}
+.reservation {
+  width: 100%;
+  height: auto;
+
+  &--search {
+    @include flexMid;
+    background-color: $cardbg-color;
+    padding: 1.5rem;
+    border-top: 2px solid #b1b1b1bd;
+    box-shadow: inset 0px 4px 10px -1px hsla(0, 0%, 69%, 0.74);
+  }
+  &--text {
+    @include flexMid;
+    flex-direction: column;
+    background-color: $bg-color;
+    padding: 3rem 0 5rem 0;
+    @media screen and (min-width: 950px) {
+      padding: 2rem 0;
+    }
+    h2,
+    span {
+      width: 25.6rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      @media screen and (min-width: 950px) {
+        width: 90%;
+        padding-left: 0;
+      }
+    }
+    .btn--explore {
+      @include btn--action;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+//typography
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.3rem;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  @media screen and (min-width: 950px) {
+    padding-left: 8rem;
+  }
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+h4 {
+  position: relative;
+  margin: 2rem 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 100%;
+  justify-content: flex-start;
+}
+h4::after {
+  content: "";
+  position: absolute;
+  border: 1px solid $tertiary-color;
+  width: 3rem;
+  bottom: -0.5rem;
+  left: 0.1rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}

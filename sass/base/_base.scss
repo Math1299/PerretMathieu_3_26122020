@@ -1,0 +1,21 @@
+//base
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// Afin d'utiliser plus facilement les rem
+html {
+  background-color: #fff;
+  font-size: 62.5%;
+  @media screen and (min-width: 1200px) {
+    font-size: 80%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

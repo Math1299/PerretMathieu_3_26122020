@@ -1,0 +1,18 @@
+//header
+header {
+  width: 100%;
+  height: auto;
+  @include flexMid;
+  position: relative;
+  a {
+    color: black;
+    position: absolute;
+    right: 90%;
+    top: 2.2rem;
+  }
+}
+img.logo {
+  width: 50%;
+  height: 6rem;
+  padding: 2rem 0 1.2rem 0;
+}
