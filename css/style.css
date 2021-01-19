@@ -17,6 +17,7 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 body {
@@ -251,6 +252,7 @@ i.fas.fa-map-marker-alt {
 
 .fct {
   width: 100%;
+  min-width: 330px;
   height: auto;
   padding: 4.5rem 0;
 }
